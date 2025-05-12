@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LUMIN | Jobs & Services Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #FEFFFF 0%, #DEF2F1 100%);
+      color: #17252A;
+      transition: background 0.3s ease;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3AAFA9 0%, #2c8e88 100%);
+      color: #FEFFFF;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #FEFFFF;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #17252A;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('images/lumin-banner.jpg') no-repeat center center/cover;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 90%;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      padding: 12px 26px;
+      margin: 0 10px;
+      background: linear-gradient(135deg, #3AAFA9 0%, #2c8e88 100%);
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(58, 175, 169, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background: #2c8e88;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 60px 30px;
+      background: white;
+    }
+
+    .feature {
+      width: 280px;
+      text-align: center;
+      margin: 15px;
+      background: linear-gradient(to bottom right, #FEFFFF, #E0F7F5);
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      color: #17252A;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      color: #3c3c3c;
+    }
+
+    .footer {
+      background: linear-gradient(90deg, #3AAFA9 0%, #2c8e88 100%);
+      color: #FEFFFF;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .cta-buttons a {
+        margin: 10px 5px;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌟 LUMIN - PongolaConnect</h1>
+  <nav>
+    <a href="login.jsp">Login</a>
+    <a href="register.jsp">Register</a>
+    <a href="view_posted_jobs.jsp">Browse Jobs</a>
+    <a href="browseServices.jsp">Browse Services</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2 data-aos="fade-down">Find Jobs. Post Services. Empower Futures.</h2>
+    <p data-aos="fade-up">LUMIN connects job seekers, employers, and service providers seamlessly.</p>
+    <div class="cta-buttons" data-aos="zoom-in">
+      <a href="register.jsp">Get Started</a>
+      <a href="view_posted_jobs.jsp">Search Jobs</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature" data-aos="fade-up">
+    <img src="images/job-icon.png" alt="Job Icon" />
+    <h3>Smart Job Matching</h3>
+    <p>Our AI filters and connects candidates to the right jobs instantly.</p>
+  </div>
+
+  <div class="feature" data-aos="fade-up" data-aos-delay="100">
+    <img src="images/cv-icon.png" alt="CV Icon" />
+    <h3>Free AI CV Builder</h3>
+    <p>Create a professional CV in minutes based on your answers.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  &copy; 2025 JOURNEY - All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+</body>
+</html>
